@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const deviceSchema = mongoose.Schema(
+const deviceSchema = new mongoose.Schema(
     {
         deviceId: {type: String, require: true},
         user: {type: mongoose.Schema.Types.ObjectId, ref: 'User'},
