@@ -1,9 +1,9 @@
 const categoryService = require('../service/category.service.js');
 
-const getAllExpenseCategory = async (req, res) => {
+const getAllCategory = async (req, res) => {
     try {
         const { categoryType } = req.params;
-        const categories = await categoryService.getAllExpenseCategory(categoryType);
+        const categories = await categoryService.getAllCategory(categoryType);
         if(categories){
             return res.status(200).json({
                 returnCode: 0,
@@ -22,4 +22,4 @@ const getAllExpenseCategory = async (req, res) => {
     }
 }
 
-module.exports = { getAllExpenseCategory }
+module.exports = { getAllCategory }

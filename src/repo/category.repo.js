@@ -6,7 +6,7 @@ const Household = require('../model/household.model.js');
 const SubscriptionPlan = require('../model/subscriptionPlan.model.js');
 
 const categoryRepo = {
-    getAllExpenseCategory: async (filter) => {
+    getAllCategory: async (filter) => {
         return await Category.find(filter);
     },
 }

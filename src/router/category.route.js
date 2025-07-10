@@ -1,7 +1,7 @@
 const express = require('express');
 const categoryRouter = express.Router();
-const { getAllExpenseCategory } = require('../controller/category.controller');
+const { getAllCategory } = require('../controller/category.controller');
 
-categoryRouter.get('/getAllExpenseCategory/:categoryType', getAllExpenseCategory);
+categoryRouter.get('/getAllExpenseCategory/:categoryType', getAllCategory);
 
 module.exports = categoryRouter;
